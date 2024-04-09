@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momo Date🥟</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Will you go on a momo date with me?🥟</h1>
+      <div class="buttons">
+        <button onclick="sendMessage('Yes, I will go on a momo date with you 😍')">Yes</button>
+        <button onclick="sendMessage('No, I won\'t be able to go on a momo date ☹️')">No</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function sendMessage(message) {
+      var encodedMessage = encodeURIComponent(message);
+      var whatsappURL = "https://wa.me/919864810337?text=" + encodedMessage;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+</body>
+</html>
